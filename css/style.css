@@ -76,4 +76,9 @@ ol li {
   display: inline-block;
   align-items: center;
   font-weight: bold;
+  padding: 5px;
+}
+
+h1 {
+  color: #A0C0FF;
 }
