@@ -66,3 +66,14 @@ header .menu-icon {
 #content {
   margin-top: 100px;
 }
+
+.poster {
+  width: 150px;
+  border: solid #b38BDC 3px;
+}
+
+ol li {
+  display: inline-block;
+  align-items: center;
+  font-weight: bold;
+}
