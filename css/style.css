@@ -1,65 +1,68 @@
-.body {
-    color: white;
+body {
+  font-family: 'Roboto', serif;
 }
 
-.header {
-    background: #f5B488;
-    width: 100%;
-    position: fixed;
-    margin: 0px;
-    top: 0px;
-    left: 0px;
-    height: 70px;
-    opacity: 70%;
-  }
-  
-  .header .menu-icon {
-    height: 50px;
-    display: inline-block;
-    top: 0px;
-    left: 0px;
-    padding: 5px;
-    margin: 5px 10px;
-  }
-  
-  .innerNavigation li:hover {
-    border-bottom: solid white;
-  }
-  
-  #btnControl {
-      display: none;
-  }
-  
-  #btnControl:checked + label > img {
-    transition: all 0.3s;
-      transform: rotate(90deg);
-     
-  }
-  
-  #btnControl:checked + label > .innerNavigation {
-    transition: all 0.5s ease-in;
-     visibility: visible;
-  }
-  
-  .innerNavigation {
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    margin: 4px;
-    margin-right: 550px;
-    top: 0px;
-    float: right;
-    visibility: hidden;
-  }
-  
-  .innerNavigation li {
-    display: inline-block;
-    font-size: 16px;
-    padding: 12px;
-    margin: 0px;
-    width: 80px;
-    text-align: center;
-    color: white;
-    text-weight: bold;
-    border:
-  }
+header {
+  background: #dc8ba3;
+  width: 100%;
+  position: fixed;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  opacity: 70%;
+}
+
+header .menu-icon {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  padding: 5px;
+  margin: 5px 10px;
+}
+
+.innerNavigation li:hover {
+  border-bottom: solid white;
+}
+
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+  transition: all 0.3s;
+    transform: rotate(90deg);
+   
+}
+
+#btnControl:checked + label > .innerNavigation {
+  transition: all 0.5s ease-in;
+   visibility: visible;
+}
+
+.innerNavigation {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  margin: 4px;
+  margin-right: 650px;
+  top: 0px;
+  float: right;
+  visibility: hidden;
+}
+
+.innerNavigation li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px;
+  margin: 0px;
+  width: 75px;
+  text-align: center;
+  color: white;
+}
+
+#content {
+  margin-top: 100px;
+}
