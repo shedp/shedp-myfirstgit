@@ -1,0 +1,28 @@
+.list {
+    grid-template-areas: "heading";
+                        "card1 card2 card3 card4 card5"
+}
+
+.list h2 {
+    grid-area: heading;
+}
+
+.list .card1 {
+    grid-area: card1;
+}
+
+.list .card2 {
+    grid-area: card2;
+}
+
+.list .card3 {
+    grid-area: card3;
+}
+
+.list .card4 {
+    grid-area: card4;
+}
+
+.list .card5 {
+    grid-area: card5;
+}

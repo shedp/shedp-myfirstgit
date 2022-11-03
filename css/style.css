@@ -81,7 +81,6 @@ header .menu-icon {
 .poster {
   width: 150px;
   height: 230px;
-  border: solid #b38BDC 3px;
   overflow: hidden;
   margin-top: 0px;
 }
@@ -102,5 +101,49 @@ ol li {
  }
 
 h1 {
-  color: #A0C0FF;
+  color: var(--orange2);
 }
+
+.list li{
+  display: inline-block;
+}
+
+.card {
+  position: relative;
+}
+
+.face1 {
+  z-index: 1;
+  position: fixed;
+  text-align: center;
+  background-image: linear-gradient(var(--purple2), var(--orange2)); 
+  width:180px;
+  height: 270px;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  
+}
+
+.card * {
+  display: inline-block;
+}
+
+.face1 h5 {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.face2 {
+  width: 180px;
+  height: 270px;
+  border-radius: 15px;
+  margin: 0px;
+  z-index: 2;
+  position: fixed;
+  transition: all 0.5s;
+}
+
+.face2:hover {
+  opacity: 0%;
+}
+
