@@ -1,28 +1,37 @@
-.list {
-    grid-template-areas: "heading";
-                        "card1 card2 card3 card4 card5"
+.grid {
+    display: grid;
+    justify-self: center;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    grid-template-rows: 270px;
+    grid-template-areas:
+          "one two three four five"
 }
 
-.list h2 {
-    grid-area: heading;
+
+.one {
+    grid-area: one;
+    display: flex;
 }
 
-.list .card1 {
-    grid-area: card1;
+.two {
+    grid-area: two;
+    display: flex;
+
+}
+.three {
+    grid-area: three;
+    display: flex;
+
 }
 
-.list .card2 {
-    grid-area: card2;
-}
+.four {
+    grid-area: four;
+    display: flex;
 
-.list .card3 {
-    grid-area: card3;
 }
+.five {
+    grid-area: five;
+    display: flex;
 
-.list .card4 {
-    grid-area: card4;
-}
-
-.list .card5 {
-    grid-area: card5;
 }
