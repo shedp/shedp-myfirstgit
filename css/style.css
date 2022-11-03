@@ -1,9 +1,18 @@
+:root {
+  --purple2: #971d78;
+  --purple1: #bc177d;
+  --orange3: #d65050;
+  --orange2: #dc6d20;
+  --orange1: #ce7233;
+}
+
+
 body {
   font-family: 'Roboto', serif;
 }
 
 header {
-  background: #dc8ba3;
+  background: var( --purple2);
   width: 100%;
   position: fixed;
   margin: 0px;
@@ -34,7 +43,7 @@ header .menu-icon {
 
 #btnControl:checked + label > img {
   transition: all 0.3s;
-    transform: rotate(90deg);
+  transform: rotate(90deg);
    
 }
 
