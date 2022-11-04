@@ -3,9 +3,11 @@
     justify-self: center;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
-    grid-template-rows: 270px;
+    grid-template-rows: 300px;
     grid-template-areas:
           "one two three four five"
+          "six seven eight nine ten"
+          "eleven twelve thirteen fourteen fifteen"
 }
 
 
@@ -13,7 +15,6 @@
     grid-area: one;
     display: flex;
 }
-
 .two {
     grid-area: two;
     display: flex;
@@ -24,7 +25,6 @@
     display: flex;
 
 }
-
 .four {
     grid-area: four;
     display: flex;
@@ -32,6 +32,54 @@
 }
 .five {
     grid-area: five;
+    display: flex;
+
+}
+.six {
+    grid-area: six;
+    display: flex;
+}
+.seven {
+    grid-area: seven;
+    display: flex;
+
+}
+.eight {
+    grid-area: eight;
+    display: flex;
+
+}
+.nine {
+    grid-area: nine;
+    display: flex;
+
+}
+.ten {
+    grid-area: ten;
+    display: flex;
+
+}
+.eleven {
+    grid-area: eleven;
+    display: flex;
+}
+.twelve {
+    grid-area: twelve;
+    display: flex;
+
+}
+.thirteen {
+    grid-area: thirteen;
+    display: flex;
+
+}
+.fourteen {
+    grid-area: fourteen;
+    display: flex;
+
+}
+.fifteen {
+    grid-area: fifteen;
     display: flex;
 
 }
