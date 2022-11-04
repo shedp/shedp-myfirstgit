@@ -3,7 +3,7 @@
     justify-self: center;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
-    grid-template-rows: 300px;
+    grid-auto-rows: 300px auto;
     grid-template-areas:
           "one two three four five"
           "six seven eight nine ten"
@@ -33,7 +33,6 @@
 .five {
     grid-area: five;
     display: flex;
-
 }
 .six {
     grid-area: six;

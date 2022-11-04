@@ -178,3 +178,15 @@ opacity: 70%;
 footer:hover {
   opacity:100%;
 }
+
+
+.sectionNav li {
+  display: inline-block;
+  padding: 3px;
+  margin-top: 0px;
+}
+
+* a {
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.5);
+}
