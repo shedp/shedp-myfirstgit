@@ -1,0 +1,41 @@
+:root {
+    --purple2: #971d78;
+    --purple1: #bc177d;
+    --orange3: #d65050;
+    --orange2: #dc6d20;
+    --orange1: #ce7233;
+}
+  
+body {
+    font-family: 'Roboto', serif;
+    width: 100%;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: var( --purple2);
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    opacity: 70%;
+    z-index: 10;
+}
+
+header .menu-icon {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 0px;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+#btnControl {
+    display: none;
+}
