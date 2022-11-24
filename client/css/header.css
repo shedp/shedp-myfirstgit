@@ -1,0 +1,81 @@
+html, body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    border: 1px solid red;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #971d78;
+    align-items: center;
+  }
+  button {
+    border: 1px solid red;
+    background-color: #971d78;
+  }
+  
+  button * {
+    width: 80%
+  }
+  
+  path {
+    fill: white;
+  }
+  
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+  }
+  
+  .ham.active {
+    transform: rotate(45deg);
+  }
+  
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: white;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  
+  .ham .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham.active .top {
+    stroke-dashoffset: -68px;
+  }
+  .ham.active .bottom {
+    stroke-dashoffset: -68px;
+  }
+  
+  .innerNavigation {
+    border: 1px solid red;
+    display: inline-block;
+    width: 40%;
+    padding:0;
+    margin:0;
+  }
+  
+  .innerNavigation li{
+    border: 1px solid red;
+    display: inline-block;
+    align-items: center;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    color: white;
+  }

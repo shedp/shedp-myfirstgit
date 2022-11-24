@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --purple2: #971d78;
+    --purple1: #bc177d;
+    --orange3: #d65050;
+    --orange2: #dc6d20;
+    --orange1: #ce7233;
+  }
+
+#main {
+  margin-top: 70px;
+}
+
+img {
+  width: 180px;
+  border-radius: 15px;
+}
+
+.card {
+  position: relative;
+  align-content: space-between;
+}
+
+.face1 {
+  z-index: 1;
+  text-align: center;
+  background-image: linear-gradient(var(--purple2), var(--orange2)); 
+  width:180px;
+  height: 270px;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 0;
+}
+
+.card * {
+  display: inline-block;
+
+}
+
+.face1 h5 {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.face2 {
+  width: 180px;
+  height: 270px;
+  border-radius: 15px;
+  margin: 0px;
+  z-index: 2;
+  transition: all 1s ease-in;
+  position: relative;
+  top: -270px
+}
+
+.card:hover > .face2 {
+  opacity: 0%;
+  z-index: -1;
+}
+
+* h5 {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: large;
+  color: white;
+}
+
+ul {
+  display: inline-block;
+}
+
+h3 {
+  width: 100%;
+  background-color: var(--orange3);
+  padding: 5px;
+  font-weight: 900;
+}
