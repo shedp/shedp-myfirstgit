@@ -1,9 +1,22 @@
-document.getElementById("menubutton").addEventListener("click", openInnerMenu)
+document.getElementById("menubutton").addEventListener("click", openinnerMenu)
 
-function openInnerMenu(e){
-    if(document.querySelector(".innerNavigation").style.display == "block") {
-    document.querySelector(".innerNavigation").style.transition = "all 0.5s ease-in"
-    document.querySelector(".innerNavigation").style.display = "none";
-    } else {document.querySelector(".innerNavigation").style.transition = "all 0.5s ease-in"
-    document.querySelector(".innerNavigation").style.display = "block";}
+function openinnerMenu(e){
+    if(innerNav.style.display == "inline-block") {
+    innerNav.style.transition = "all 0.5s ease-in"
+    innerNav.style.display = "none";
+    } else {innerNav.style.transition = "all 0.5s ease-in"
+    innerNav.style.display = "inline-block";}
+}
+
+let innerNav = document.querySelector(".innerNavigation");
+let searchBar = document.getElementById("searchbar");
+
+document.getElementById("searchIcon").addEventListener("click", openSearchBar)
+
+function openSearchBar(e){
+    if (window.matchMedia("(max-width: 805px)").matches) {
+        if (document.getElementById("searchbar").style.display == "none") {
+            console.log("search nbar is closed")
+        } 
+    }
 }

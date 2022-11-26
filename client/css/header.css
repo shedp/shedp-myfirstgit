@@ -11,8 +11,12 @@ html, body{
     margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
-  border: 1px solid red;
+  position: fixed;
   top: 0px;
   left: 0px;
   margin: 0px;
@@ -22,14 +26,15 @@ html, body{
   height: 80px;
 }
 
-button {
-  border: 1px solid red;
+#menubutton {
+  position: absolute;
   background-color: var(--Blue);
   width: 80px;
   height: 80px;
+  border: none;
 }
   
-button * {
+#menubutton * {
   width: 80%
 }
   
@@ -74,24 +79,137 @@ path {
   }
   
   .innerNavigation {
-    border: 1px solid red;
-    display: inline-block;
-    margin: 0px;
+    margin: 0px 0px 0px 95px;
     width: 50%;
+    height: 80px;
     padding:0px;
     display: none;
     justify-content: space-between;
-    align-self: end;
-    height: 80px;
   }
   
   .innerNavigation li{
-    border: 1px solid red;
+    padding: 20px 0px 15px 0px;
     display: inline-block;
-    font-size: 10px;
+    font-size: 25px;
     width: 24%;
     text-align: center;
-    color: black;
-    font-size: xx-large;
+    color: white;
     font-family: 'Barlow Condensed', sans-serif;
+    border-bottom: 5px solid var(--Blue);
+  }
+
+  .innerNavigation li:hover{
+    border-bottom: 5px solid var(--Red);
+  }
+
+  #searchbar {
+    margin-right: 50px;
+    width:25%;
+    float: right;
+    padding: 15px;
+    height: 50px;
+  }
+
+  #searchbar input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: #456da4;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 3px 15px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+  }
+
+  #searchbar input[type="text"]:focus {
+    outline: none;
+
+  }
+
+  #searchIcon {
+    margin: 0px;
+    float: right;
+    background-color: var(--Blue);
+    width: 80px;
+    height: 80px;
+    border: none;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    #searchbar {
+      width: 17%;
+    }
+  }
+
+  @media only screen and (max-width: 805px) {
+    #searchbar {
+      display: none;
+    }
+    .innerNavigation {
+      width: 68%;
+    }
+    .innerNavigation li{
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .innerNavigation {
+      margin-top: 10px
+    }
+
+    .innerNavigation li{
+      padding: 20px 0px 15px 0px;
+      display: block;
+      font-size: 25px;
+      width: 100%;
+      text-align: center;
+      background-color: #11468F;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .innerNavigation {
+      margin: 0px 0px 0px 80px;
+      margin-top: 10px;
+      margin-right:0px;
+      width: 40%
+    }
+
+    .innerNavigation li{
+      padding: 20px 0px 15px 0px;
+      display: block;
+      font-size: 25px;
+      width: 80%;
+      text-align: center;
+      background-color: #11468F;
+      color: white;
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .innerNavigation {
+      width: 35%
+    }
+
+    .innerNavigation li{
+      font-size: 18px;
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 290px) {
+    .innerNavigation {
+      width: 30%
+    }
+
+    .innerNavigation li{
+      font-size: 14px;
+      width: 80%;
+    }
   }
