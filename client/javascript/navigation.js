@@ -11,12 +11,12 @@ function openinnerMenu(e){
 let innerNav = document.querySelector(".innerNavigation");
 let searchBar = document.getElementById("searchbar");
 
-document.getElementById("searchIcon").addEventListener("click", openSearchBar)
+document.querySelector("#searchIcon").addEventListener("click", openSearchBar)
 
 function openSearchBar(e){
     if (window.matchMedia("(max-width: 805px)").matches) {
-        if (document.getElementById("searchbar").style.display == "none") {
-            console.log("search nbar is closed")
+        if (searchBar.style.display == "none") {
+            console.log("search bar is closed")
         } 
     }
 }
