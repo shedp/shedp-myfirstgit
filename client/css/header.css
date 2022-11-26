@@ -24,6 +24,7 @@ a {
   width: 100%;
   background-color: var(--Blue);
   height: 80px;
+  z-index: 10;
 }
 
 #menubutton {
