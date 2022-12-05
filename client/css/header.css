@@ -89,10 +89,9 @@ path {
     justify-content: space-between;
   }
   
-  .innerNavigation li{
+  .hideSearch li, .innerNavigation li{
     padding: 20px 0px 15px 0px;
     height: 40px;
-    display: inline-block;
     font-size: 25px;
     width: 24%;
     text-align: center;
@@ -100,17 +99,20 @@ path {
     font-family: 'Barlow Condensed', sans-serif;
     border-bottom: 5px solid var(--Blue);
   }
+  .innerNavigation li{
+    display: inline-block;
+  }
 
   #innerSearch {
     display: none;
   }
 
-  .innerNavigation li:hover{
-    border-bottom: 5px solid var(--Red);
+  .hideSearch li {
+    display: none;
   }
 
-  #hideSearch {
-    display: none;
+  .hideSearch li:hover, .innerNavigation li:hover{
+    border-bottom: 5px solid var(--Red);
   }
 
   #searchbar {
@@ -171,7 +173,7 @@ path {
       display: none;
     }
 
-    #hideSearch {
+    .hideSearch li {
       display: inline-block;
     }
 
@@ -189,7 +191,7 @@ path {
   }
 
   @media only screen and (max-width: 777px) {
-    .innerNavigation li{
+    .hideSearch li, .innerNavigation li{
       font-size: 18px;
     }
   }
@@ -202,7 +204,7 @@ path {
       width: 40%
     }
 
-    .innerNavigation li{
+    .hideSearch li, .innerNavigation li{
       padding: 20px 0px 15px 0px;
       display: block;
       font-size: 25px;
@@ -219,8 +221,9 @@ path {
       width: 35%
     }
 
-    .innerNavigation li{
+    .hideSearch li, .innerNavigation li{
       font-size: 18px;
+      background-color: #11468F;
       width: 80%;
     }
   }
@@ -230,8 +233,8 @@ path {
       width: 30%
     }
 
-    .innerNavigation li{
+    #hideSearch li, .innerNavigation li{
       font-size: 14px;
-      width: 80%;
+      background-color: #11468F;
     }
   }
